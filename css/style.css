@@ -1,31 +1,40 @@
+body{
+	background-color: darkblue;
+}
 .header{
-	width: 900px;
 	display: flex;
 	justify-content: space-between;
 }
 .logo{
 	padding-bottom: 5px;
-	margin: 0;
 }
 nav .nav{
 	margin: 20px 0px;
 }
 .nav{
 	display: flex;
-	margin: 0;
 	padding-left: 0;
 	font-size: 30px;
 }
 .nav{
 	padding-left: 30px;
+	font-family: ninobold;
 }
 a{
 	color: white;
 	text-decoration: none;
 }
-.body{
+a:hover{
+	color: red;
+	font-size: 40px;
+}
+a:active{
+	color: black;
+	font-size: 40px;
+}
+.container{
 	margin: 15px;
-	width: 930px;
+	max-width: 900px;
 	background-color: darkblue;
 	}
 h1{
@@ -54,4 +63,13 @@ footer{
 .icon{
 	height: 30px;
 	margin: auto 30px;
+}
+.text-container{
+	padding: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+.title{
+	font-family: ninobold;
+	font-size: 30px;
 }
