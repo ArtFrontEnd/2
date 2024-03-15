@@ -36,7 +36,7 @@ a.active{
 	color: red;
 }
 .container{
-	margin: 15px;
+	margin: 15px auto;
 	max-width: 900px;
 	background-color: darkblue;
 	}
@@ -68,11 +68,24 @@ footer{
 	margin: auto 30px;
 }
 .text-container{
-	padding: 100px;
-	text-align: center;
+	padding: 100px 0;
 	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 .title{
+	padding-bottom: 10px;
 	font-family: ninobold;
 	font-size: 30px;
+}
+.phone:hover {
+	color: white;
+	font-size: inherit;
+}
+.map{
+	width: 600px;
+	overflow: hidden
+}
+.contact-ul{
+	color: red;
 }
