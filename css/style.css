@@ -103,3 +103,16 @@ footer{
 	padding: 10px;
 	background-color: silver;
 }
+.scroll{
+	height: 100px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	background-color: white;
+}
+::-webkit-scrollbar-thumb{
+	background-color: white;
+	border-radius: 50px;
+	background-color: darkblue;
+}
