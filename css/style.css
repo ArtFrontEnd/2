@@ -169,23 +169,47 @@ footer{
 	.header{
 		flex-wrap: wrap;
 	}
+	a:hover{
+		font-size: inherit;
+	}
 }
 @media (max-width: 450px){
 	.nav{
 		display: block;
-		padding-left: 0;
-		padding-top: 3px;	
+		padding: 3px;
 	}
 	a:hover{
 		font-size: inherit;
+	}
+	.back{
+		background-image: url('../images/1.webp');
+		background-repeat: no-repeat;
+		width:  100%;
+		height: 258.55px;
+		background-position: center center;
+		background-size: cover
+	}
+	.car{
+		display: none;
 	}
 }
 @media (max-width: 244px){
 	.nav{
 		display: block;
-		padding: 0;	
+		padding: 3px;
 	}
 	a:hover{
 		font-size: inherit;
+	}
+	.back{
+		background-image: url('../images/1.webp');
+		background-repeat: no-repeat;
+		width:  100%;
+		height: 137.73px;
+		background-position: center center;
+		background-size: cover
+	}
+	.car{
+		display: none;
 	}
 }
