@@ -8,13 +8,14 @@ body{
 .logo{
 	padding-bottom: 5px;
 }
-nav .nav{
+/* nav .nav{
 	margin: 20px 0px;
-}
+} */
 .nav{
 	display: flex;
 	padding-left: 0;
 	font-size: 30px;
+	align-items: center;
 }
 .nav{
 	padding-left: 30px;
