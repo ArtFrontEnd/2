@@ -1,0 +1,21 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^9.0.0",
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "vinyl": "^3.0.0"
+  }
+}
