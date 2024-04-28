@@ -212,4 +212,12 @@ footer{
 	.car{
 		display: none;
 	}
+	.car{
+		display: flex;
+	}
+}
+@each $icons in bmw-logo, hyundai-motor-company, logo, youtube {
+	.#{$icons}{
+		background-image: url('/images/#{$icons}.svg');
+	}
 }

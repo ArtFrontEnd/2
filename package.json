@@ -4,18 +4,33 @@
   "description": "2",
   "main": "index.js",
   "scripts": {
+    "watch-css": "watch 'postcss css/ -o output.css' css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/register": "^7.23.7",
+    "@babel/runtime": "^7.24.4",
+    "esm": "^3.2.25",
     "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-watch-sass": "^1.4.1",
     "node-sass": "^9.0.0",
     "sass": "^1.75.0"
   },
+    "browserslist": [
+      "last 200 version",
+      "> 1%",
+      "IE 10"
+    ],
   "dependencies": {
+    "es": "^0.8.0",
     "vinyl": "^3.0.0"
+    
   }
 }
