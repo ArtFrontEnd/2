@@ -183,10 +183,9 @@ footer{
 	display: flex;
 	justify-content: center;
 }
-	.send {
-		margin: 0;
-		height: 15px;
-	}
+.send {
+	height: 15px;
+}
 @keyframes anim {
 	10%{
 		transform: rotate(36deg);
