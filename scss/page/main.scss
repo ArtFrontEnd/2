@@ -166,13 +166,14 @@ footer{
 	border-color: aquamarine;
 	margin: 2px 0;
 	width: 100%;
-	padding: 2%;
+	padding: 10px;
+	font-size: 15px;
 	box-sizing: border-box;
-	height: 30px;
+	height: 40px;
 	box-shadow: 2px 2px 5px aqua;
 }
 .inbut{
-	height: 30px;
+	height: 40px;
 	border-radius: 10px;
 	background-color: aqua;
 	border-color: aqua;
@@ -180,8 +181,9 @@ footer{
 	width: 100%;
 	padding: 2%;
 	box-shadow: 2px 2px 5px aqua;
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
+	// text-align: center;
 }
 .send {
 	height: 15px;
