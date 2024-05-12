@@ -180,7 +180,13 @@ footer{
 	width: 100%;
 	padding: 2%;
 	box-shadow: 2px 2px 5px aqua;
+	display: flex;
+	justify-content: center;
 }
+	.send {
+		margin: 0;
+		height: 15px;
+	}
 @keyframes anim {
 	10%{
 		transform: rotate(36deg);
