@@ -52,8 +52,8 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background-color: darkblue;
+:focus {
+  outline: none;
 }
 
 .header {
@@ -124,6 +124,7 @@ a.active {
 }
 
 .container {
+  padding: 15px 15px;
   margin: 15px auto;
   max-width: 900px;
   background-color: darkblue;
@@ -264,6 +265,81 @@ footer {
   bottom: 20px;
 }
 
+.textbox {
+  width: -webkit-calc(100% - 210px);
+  width: -moz-calc(100% - 210px);
+  width: calc(100% - 210px);
+  resize: none;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 200px;
+  min-height: 200px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.inputflex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 4px;
+}
+
+.inputbox {
+  display: block;
+  width: 200px;
+}
+
+.inbox {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  width: 100%;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.inbut {
+  height: 30px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  background-color: aqua;
+  border-color: aqua;
+  margin: 2px 0;
+  width: 100%;
+  padding: 2%;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
 @-webkit-keyframes anim {
   10% {
     -webkit-transform: rotate(36deg);
@@ -399,6 +475,14 @@ footer {
     font-size: inherit;
   }
 }
+@media (max-width: 455px) {
+  .textbox {
+    width: 100%;
+  }
+  .inputbox {
+    width: 100%;
+  }
+}
 @media (max-width: 450px) {
   .nav {
     display: block;
@@ -420,6 +504,11 @@ footer {
   }
   .car {
     display: none;
+  }
+}
+@media (max-width: 253px) {
+  .textbox {
+    min-width: inherit;
   }
 }
 @media (max-width: 244px) {
