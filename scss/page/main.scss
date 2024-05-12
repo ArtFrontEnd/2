@@ -186,10 +186,32 @@ footer{
 .send {
 	height: 15px;
 }
-#myDate::placeholder {
-	color: hwb(0 0% 100%); /* Adjust color as needed */
-	font-style: italic; /* Adjust font style as needed */
+
+.input-container {
+	position: relative;
 }
+  
+.input-label {
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+	color: #999; /* Adjust text color as needed */
+	pointer-events: none; /* Ensures the label doesn't interfere with input */
+	transition: all 0.2s ease-out; /* Smooth transition for label */
+}
+  
+#myDate {
+	padding: 0.5rem; /* Adjust padding as needed */
+	padding-left: 1rem; /* Ensure text doesn't overlap with label */
+	width: 200px; /* Adjust width as needed */
+}
+  
+#myDate:focus + .input-label,
+#myDate:not(:placeholder-shown) + .input-label {
+	transform: translateY(-1.5rem) scale(0.8); /* Adjust position and size of label */
+	color: #333; /* Adjust text color when input is focused or has a value */
+}
+
 @keyframes anim {
 	10%{
 		transform: rotate(36deg);
