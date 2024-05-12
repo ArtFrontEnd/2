@@ -186,6 +186,10 @@ footer{
 .send {
 	height: 15px;
 }
+#myDate::placeholder {
+	color: hwb(0 0% 100%); /* Adjust color as needed */
+	font-style: italic; /* Adjust font style as needed */
+}
 @keyframes anim {
 	10%{
 		transform: rotate(36deg);

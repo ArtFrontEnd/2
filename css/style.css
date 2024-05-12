@@ -354,6 +354,36 @@ footer {
   height: 15px;
 }
 
+#myDate::-webkit-input-placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
+#myDate:-moz-placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
+#myDate::-moz-placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
+#myDate:-ms-input-placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
+#myDate::-ms-input-placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
+#myDate::placeholder {
+  color: hwb(0 0% 100%); /* Adjust color as needed */
+  font-style: italic; /* Adjust font style as needed */
+}
+
 @-webkit-keyframes anim {
   10% {
     -webkit-transform: rotate(36deg);
