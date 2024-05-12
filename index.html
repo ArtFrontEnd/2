@@ -43,10 +43,7 @@
 						<input class="inbox" type="email" placeholder="E-mail">
 						<input class="inbox" type="number" placeholder="Phone number">
 						<input class="inbox" type="text" placeholder="Address">
-						<div class="input-container">
-							<input type="date" id="myDate" name="myDate">
-							<label for="myDate" class="input-label">Select a Date</label>
-						</div>
+						<input class="inbox" type="date" id="myDate" name="myDate">
 						<button class="inbut">SEND<img class="send" src="images/send.svg"></button>
 					</div>
 				</form>
@@ -82,18 +79,5 @@
 				</ul>
 			</footer>
 		</div>
-		<script>
-			const input = document.getElementById('myDate');
-
-			input.addEventListener('focus', () => {
-			input.setAttribute('placeholder', ' ');
-			});
-
-			input.addEventListener('blur', () => {
-			if (!input.value) {
-				input.setAttribute('placeholder', 'Select a Date');
-			}
-			});
-		</script>	
 	</body>
 </html>

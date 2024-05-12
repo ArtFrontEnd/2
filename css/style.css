@@ -354,50 +354,6 @@ footer {
   height: 15px;
 }
 
-.input-container {
-  position: relative;
-}
-
-.input-label {
-  position: absolute;
-  top: 0.5rem;
-  left: 1rem;
-  color: #999; /* Adjust text color as needed */
-  pointer-events: none; /* Ensures the label doesn't interfere with input */
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; /* Smooth transition for label */
-}
-
-#myDate {
-  padding: 0.5rem; /* Adjust padding as needed */
-  padding-left: 1rem; /* Ensure text doesn't overlap with label */
-  width: 200px; /* Adjust width as needed */
-}
-
-#myDate:not(:-moz-placeholder-shown) + .input-label {
-  -moz-transform: translateY(-1.5rem) scale(0.8);
-       transform: translateY(-1.5rem) scale(0.8); /* Adjust position and size of label */
-  color: #333; /* Adjust text color when input is focused or has a value */
-}
-
-#myDate:not(:-ms-input-placeholder) + .input-label {
-  -ms-transform: translateY(-1.5rem) scale(0.8);
-      transform: translateY(-1.5rem) scale(0.8); /* Adjust position and size of label */
-  color: #333; /* Adjust text color when input is focused or has a value */
-}
-
-#myDate:focus + .input-label,
-#myDate:not(:placeholder-shown) + .input-label {
-  -webkit-transform: translateY(-1.5rem) scale(0.8);
-     -moz-transform: translateY(-1.5rem) scale(0.8);
-      -ms-transform: translateY(-1.5rem) scale(0.8);
-       -o-transform: translateY(-1.5rem) scale(0.8);
-          transform: translateY(-1.5rem) scale(0.8); /* Adjust position and size of label */
-  color: #333; /* Adjust text color when input is focused or has a value */
-}
-
 @-webkit-keyframes anim {
   10% {
     -webkit-transform: rotate(36deg);
