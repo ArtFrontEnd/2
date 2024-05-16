@@ -13,11 +13,8 @@
 }
 .nav{
 	display: flex;
-	padding-left: 0;
 	font-size: 30px;
 	align-items: center;
-}
-.nav{
 	padding-left: 30px;
 	font-family: ninobold;
 }
@@ -27,15 +24,15 @@ a{
 	text-decoration: none;
 }
 a:hover{
-	color: red;
+	color: blue;
 	font-size: 40px;
 }
 a:active{
-	color: black;
+	color: aqua;
 	font-size: 40px;
 }
 a.active{
-	color: red;
+	color: aqua;
 }
 .container{
 	padding: 15px 15px;
@@ -139,55 +136,7 @@ footer{
 	left: 30px;
 	bottom: 20px;
 }
-.textbox {
-	width: calc(100% - 210px);
-	resize: none;
-	border-radius: 10px;
-	border-color: aquamarine;
-	margin: 2px 0;
-	padding: 2%;
-	box-sizing: border-box;
-	min-width: 200px;
-	min-height: 200px;
-	box-shadow: 2px 2px 5px aqua;
-}
-.inputflex {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 4px;
-}
-.inputbox {
-	display: block;
-	width: 200px;
-}
-.inbox{
-	border-radius: 10px;
-	border-color: aquamarine;
-	margin: 2px 0;
-	width: 100%;
-	padding: 10px;
-	font-size: 15px;
-	box-sizing: border-box;
-	height: 40px;
-	box-shadow: 2px 2px 5px aqua;
-}
-.inbut{
-	height: 40px;
-	border-radius: 10px;
-	background-color: aqua;
-	border-color: aqua;
-	margin: 2px 0;
-	width: 100%;
-	padding: 2%;
-	box-shadow: 2px 2px 5px aqua;
-	// display: flex;
-	// justify-content: center;
-	// text-align: center;
-}
-.send {
-	height: 15px;
-}
+
 @keyframes anim {
 	10%{
 		transform: rotate(36deg);
@@ -208,74 +157,7 @@ footer{
 		transform: rotate(360deg);
 	}
 }
-@media (max-width: 675px){
-	.nav{
-		padding-left: 5px;
-		flex-wrap: wrap;
-	}
-	.header{
-		flex-wrap: wrap;
-	}
-	a:hover{
-		font-size: inherit;
-	}
-}
-@media (max-width: 455px){
-	.textbox{
-		width: 100%;
-	}
-	.inputbox{
-		width: 100%;
-	}
-}
-@media (max-width: 450px){
-	.nav{
-		display: block;
-		padding: 3px;
-	}
-	a:hover{
-		font-size: inherit;
-	}
-	.back{
-		background-image: url('../images/1.webp');
-		background-repeat: no-repeat;
-		width:  100%;
-		height: 258.55px;
-		background-position: center center;
-		background-size: cover
-	}
-	.car{
-		display: none;
-	}
-}
-@media (max-width: 253px){
-	.textbox{
-		min-width: inherit;
-	}
-}
-@media (max-width: 244px){
-	.nav{
-		display: block;
-		padding: 3px;
-	}
-	a:hover{
-		font-size: inherit;
-	}
-	.back{
-		background-image: url('../images/1.webp');
-		background-repeat: no-repeat;
-		width:  100%;
-		height: 137.73px;
-		background-position: center center;
-		background-size: cover
-	}
-	.car{
-		display: none;
-	}
-	.car{
-		display: flex;
-	}
-}
+
 @each $icons in bmw-logo, hyundai-motor-company, logo, youtube {
 	.#{$icons}{
 		background-image: url('/images/#{$icons}.svg');

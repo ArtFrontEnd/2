@@ -1,0 +1,49 @@
+.textbox {
+	width: calc(100% - 210px);
+	resize: none;
+	border-radius: 10px;
+	border-color: aquamarine;
+	margin: 2px 0;
+	padding: 2%;
+	box-sizing: border-box;
+	min-width: 200px;
+	min-height: 200px;
+	box-shadow: 2px 2px 5px aqua;
+}
+.inputflex {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 4px;
+}
+.inputbox {
+	display: block;
+	width: 200px;
+}
+.inbox{
+	border-radius: 10px;
+	border-color: aquamarine;
+	margin: 2px 0;
+	width: 100%;
+	padding: 10px;
+	font-size: 15px;
+	box-sizing: border-box;
+	height: 40px;
+	box-shadow: 2px 2px 5px aqua;
+}
+.inbut{
+	height: 40px;
+	border-radius: 10px;
+	background-color: aqua;
+	border-color: aqua;
+	margin: 2px 0;
+	width: 100%;
+	padding: 2%;
+	box-shadow: 2px 2px 5px aqua;
+	// display: flex;
+	// justify-content: center;
+	// text-align: center;
+}
+.send {
+	height: 15px;
+}

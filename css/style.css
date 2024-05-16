@@ -86,16 +86,12 @@ table {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
   font-size: 30px;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav {
   padding-left: 30px;
   font-family: ninobold;
 }
@@ -110,17 +106,17 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: blue;
   font-size: 40px;
 }
 
 a:active {
-  color: black;
+  color: aqua;
   font-size: 40px;
 }
 
 a.active {
-  color: red;
+  color: aqua;
 }
 
 .container {
@@ -464,6 +460,22 @@ footer {
             transform: rotate(360deg);
   }
 }
+.bmw-logo {
+  background-image: url("/images/bmw-logo.svg");
+}
+
+.hyundai-motor-company {
+  background-image: url("/images/hyundai-motor-company.svg");
+}
+
+.logo {
+  background-image: url("/images/logo.svg");
+}
+
+.youtube {
+  background-image: url("/images/youtube.svg");
+}
+
 @media (max-width: 675px) {
   .nav {
     padding-left: 5px;
@@ -538,26 +550,83 @@ footer {
   .car {
     display: none;
   }
-  .car {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
-.bmw-logo {
-  background-image: url("/images/bmw-logo.svg");
+.textbox {
+  width: -webkit-calc(100% - 210px);
+  width: -moz-calc(100% - 210px);
+  width: calc(100% - 210px);
+  resize: none;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 200px;
+  min-height: 200px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
 }
 
-.hyundai-motor-company {
-  background-image: url("/images/hyundai-motor-company.svg");
+.inputflex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 4px;
 }
 
-.logo {
-  background-image: url("/images/logo.svg");
+.inputbox {
+  display: block;
+  width: 200px;
 }
 
-.youtube {
-  background-image: url("/images/youtube.svg");
+.inbox {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.inbut {
+  height: 40px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  background-color: aqua;
+  border-color: aqua;
+  margin: 2px 0;
+  width: 100%;
+  padding: 2%;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.send {
+  height: 15px;
 }
