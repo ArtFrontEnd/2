@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+main, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -25,15 +25,20 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, main, menu, nav, section {
   display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
 }
 
 body {
   line-height: 1;
 }
 
-ol, ul {
+menu, ol, ul {
   list-style: none;
 }
 
@@ -52,8 +57,205 @@ table {
   border-spacing: 0;
 }
 
-:focus {
-  outline-color: aqua;
+@font-face {
+  font-family: ninobold;
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.ttf");
+  src: url("../fonts/bpg-nino-mtavruli-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-nino-mtavruli-bold-webfont.woff2") format("woff2"), url("../fonts/bpg-nino-mtavruli-bold-webfont.woff") format("woff"), url("../fonts/bpg-nino-mtavruli-bold-webfont.ttf") format("truetype"), url("../fonts/bpg-nino-mtavruli-bold-webfont.svg#bpg_nino_mtavrulibold") format("svg"); /* Legacy iOS */
+}
+@-webkit-keyframes anim {
+  10% {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+            transform: rotate(216deg);
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-moz-keyframes anim {
+  10% {
+    -moz-transform: rotate(36deg);
+         transform: rotate(36deg);
+  }
+  20% {
+    -moz-transform: rotate(72deg);
+         transform: rotate(72deg);
+  }
+  40% {
+    -moz-transform: rotate(144deg);
+         transform: rotate(144deg);
+  }
+  60% {
+    -moz-transform: rotate(216deg);
+         transform: rotate(216deg);
+  }
+  80% {
+    -moz-transform: rotate(288deg);
+         transform: rotate(288deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+         transform: rotate(360deg);
+  }
+}
+@-o-keyframes anim {
+  10% {
+    -o-transform: rotate(36deg);
+       transform: rotate(36deg);
+  }
+  20% {
+    -o-transform: rotate(72deg);
+       transform: rotate(72deg);
+  }
+  40% {
+    -o-transform: rotate(144deg);
+       transform: rotate(144deg);
+  }
+  60% {
+    -o-transform: rotate(216deg);
+       transform: rotate(216deg);
+  }
+  80% {
+    -o-transform: rotate(288deg);
+       transform: rotate(288deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+       transform: rotate(360deg);
+  }
+}
+@keyframes anim {
+  10% {
+    -webkit-transform: rotate(36deg);
+       -moz-transform: rotate(36deg);
+         -o-transform: rotate(36deg);
+            transform: rotate(36deg);
+  }
+  20% {
+    -webkit-transform: rotate(72deg);
+       -moz-transform: rotate(72deg);
+         -o-transform: rotate(72deg);
+            transform: rotate(72deg);
+  }
+  40% {
+    -webkit-transform: rotate(144deg);
+       -moz-transform: rotate(144deg);
+         -o-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  60% {
+    -webkit-transform: rotate(216deg);
+       -moz-transform: rotate(216deg);
+         -o-transform: rotate(216deg);
+            transform: rotate(216deg);
+  }
+  80% {
+    -webkit-transform: rotate(288deg);
+       -moz-transform: rotate(288deg);
+         -o-transform: rotate(288deg);
+            transform: rotate(288deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.textbox {
+  width: -webkit-calc(100% - 210px);
+  width: -moz-calc(100% - 210px);
+  width: calc(100% - 210px);
+  resize: none;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 200px;
+  min-height: 200px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.inputflex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 4px;
+}
+
+.inputbox {
+  display: block;
+  width: 200px;
+}
+
+.inbox {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  border-color: aquamarine;
+  margin: 2px 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.inbut {
+  height: 40px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  background-color: aqua;
+  border-color: aqua;
+  margin: 2px 0;
+  width: 100%;
+  padding: 2%;
+  -webkit-box-shadow: 2px 2px 5px aqua;
+     -moz-box-shadow: 2px 2px 5px aqua;
+          box-shadow: 2px 2px 5px aqua;
+}
+
+.send {
+  height: 15px;
 }
 
 .header {
@@ -261,125 +463,6 @@ footer {
   bottom: 20px;
 }
 
-@-webkit-keyframes anim {
-  10% {
-    -webkit-transform: rotate(36deg);
-            transform: rotate(36deg);
-  }
-  20% {
-    -webkit-transform: rotate(72deg);
-            transform: rotate(72deg);
-  }
-  40% {
-    -webkit-transform: rotate(144deg);
-            transform: rotate(144deg);
-  }
-  60% {
-    -webkit-transform: rotate(216deg);
-            transform: rotate(216deg);
-  }
-  80% {
-    -webkit-transform: rotate(288deg);
-            transform: rotate(288deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-moz-keyframes anim {
-  10% {
-    -moz-transform: rotate(36deg);
-         transform: rotate(36deg);
-  }
-  20% {
-    -moz-transform: rotate(72deg);
-         transform: rotate(72deg);
-  }
-  40% {
-    -moz-transform: rotate(144deg);
-         transform: rotate(144deg);
-  }
-  60% {
-    -moz-transform: rotate(216deg);
-         transform: rotate(216deg);
-  }
-  80% {
-    -moz-transform: rotate(288deg);
-         transform: rotate(288deg);
-  }
-  100% {
-    -moz-transform: rotate(360deg);
-         transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes anim {
-  10% {
-    -o-transform: rotate(36deg);
-       transform: rotate(36deg);
-  }
-  20% {
-    -o-transform: rotate(72deg);
-       transform: rotate(72deg);
-  }
-  40% {
-    -o-transform: rotate(144deg);
-       transform: rotate(144deg);
-  }
-  60% {
-    -o-transform: rotate(216deg);
-       transform: rotate(216deg);
-  }
-  80% {
-    -o-transform: rotate(288deg);
-       transform: rotate(288deg);
-  }
-  100% {
-    -o-transform: rotate(360deg);
-       transform: rotate(360deg);
-  }
-}
-
-@keyframes anim {
-  10% {
-    -webkit-transform: rotate(36deg);
-       -moz-transform: rotate(36deg);
-         -o-transform: rotate(36deg);
-            transform: rotate(36deg);
-  }
-  20% {
-    -webkit-transform: rotate(72deg);
-       -moz-transform: rotate(72deg);
-         -o-transform: rotate(72deg);
-            transform: rotate(72deg);
-  }
-  40% {
-    -webkit-transform: rotate(144deg);
-       -moz-transform: rotate(144deg);
-         -o-transform: rotate(144deg);
-            transform: rotate(144deg);
-  }
-  60% {
-    -webkit-transform: rotate(216deg);
-       -moz-transform: rotate(216deg);
-         -o-transform: rotate(216deg);
-            transform: rotate(216deg);
-  }
-  80% {
-    -webkit-transform: rotate(288deg);
-       -moz-transform: rotate(288deg);
-         -o-transform: rotate(288deg);
-            transform: rotate(288deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-       -moz-transform: rotate(360deg);
-         -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 .bmw-logo {
   background-image: url("/images/bmw-logo.svg");
 }
@@ -470,83 +553,4 @@ footer {
   .car {
     display: none;
   }
-}
-.textbox {
-  width: -webkit-calc(100% - 210px);
-  width: -moz-calc(100% - 210px);
-  width: calc(100% - 210px);
-  resize: none;
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
-  border-color: aquamarine;
-  margin: 2px 0;
-  padding: 2%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 200px;
-  min-height: 200px;
-  -webkit-box-shadow: 2px 2px 5px aqua;
-     -moz-box-shadow: 2px 2px 5px aqua;
-          box-shadow: 2px 2px 5px aqua;
-}
-
-.inputflex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin: 4px;
-}
-
-.inputbox {
-  display: block;
-  width: 200px;
-}
-
-.inbox {
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
-  border-color: aquamarine;
-  margin: 2px 0;
-  width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 40px;
-  -webkit-box-shadow: 2px 2px 5px aqua;
-     -moz-box-shadow: 2px 2px 5px aqua;
-          box-shadow: 2px 2px 5px aqua;
-}
-
-.inbut {
-  height: 40px;
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
-  background-color: aqua;
-  border-color: aqua;
-  margin: 2px 0;
-  width: 100%;
-  padding: 2%;
-  -webkit-box-shadow: 2px 2px 5px aqua;
-     -moz-box-shadow: 2px 2px 5px aqua;
-          box-shadow: 2px 2px 5px aqua;
-}
-
-.send {
-  height: 15px;
 }

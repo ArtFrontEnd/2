@@ -1,4 +1,9 @@
-@import 'reset';
-@import 'page/main';
-@import 'media';
-@import 'inputs';
+@import 'basic/reset';
+@import 'basic/fonts';
+@import 'modules/variable';
+@import 'modules/classes';
+@import 'modules/mixins';
+@import 'main/keyframes';
+@import 'main/inputs';
+@import 'main/main';
+@import 'main/media';
