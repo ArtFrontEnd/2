@@ -1,143 +1,110 @@
-.header{
-	display: flex;
-	justify-content: space-between;
-}
-.logo{
-	padding-bottom: 5px;
-}
-/* nav .nav{
-	margin: 20px 0px;
-} */
-.info {
-	padding-right: 20px;
-}
-.nav{
-	display: flex;
-	font-size: 30px;
-	align-items: center;
-	padding-left: 30px;
-	font-family: ninobold;
-}
-a{
-	transition: all .3s linear;
-	color: white;
-	text-decoration: none;
-}
-a:hover{
-	color: blue;
-	font-size: 40px;
-}
-a:active{
-	color: aqua;
-	font-size: 40px;
-}
-a.active{
-	color: aqua;
-}
 .container{
-	padding: 15px 15px;
-	margin: 15px auto;
-	max-width: 900px;
-	background-color: darkblue;
-	box-shadow: 0px 0px 800px aqua;	
-	}		
-h1{
-	color: white;
-	font-size: 100px;
-	}	
-.test{
-	color: white;
-	font-size: 30px;
+	@extend %container;
+	.header{
+		@include flex(space-between);
+		.logo{
+			padding-bottom: 5px;
+		}
+		.nav{
+			@include flex(flex-end);
+			font-size: 30px;
+			padding-left: 30px;
+			font-family: ninobold;
+			.nav{
+				a{
+					transition: all .3s linear;
+					color: $white;
+					text-decoration: none;
+				}
+				a:hover{
+					color: $blue;
+					font-size: 40px;
+				}
+				a:active{
+					color: $aqua;
+					font-size: 40px;
+				}
+				a.active{
+					color: $aqua;
+				}
+				.info {
+					padding-right: 20px;
+				}
+			}
+		}
 	}
-.io{
-	text-transform: uppercase;
+	.banner{
+		position: relative;
+		.rim{
+			@include absolute(unset, 30px, 20px);
+			width: 10%;
+			transition: bottom 1s linear;
+		}
+		.rim:active{
+			bottom: 80%;
+			animation: anim 1s infinite;
+		}
+		.br{
+			@include absolute(unset, unset, 20px, 30px);
+		}
+	}
+	.content{
+		h1{
+			color: $white;
+			font-size: 100px;
+		}	
+		.test{
+			color: $white;
+			font-size: 30px;
+		}
+		.io{
+			text-transform: uppercase;
+		}
+		.scroll{
+			height: 100px;
+			overflow: auto;
+			scroll-behavior: smooth;
+			.img {
+				width: 100px;
+				float: left;
+				margin-right: 20px;
+				margin-bottom: 10px;
+			}
+		}
+		::-webkit-scrollbar {
+			background-color: $white;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: $white;
+			border-radius: 50px;
+			background-color: $darkblue;
+		}
+
+	}
+	footer{
+		background-color: $white;
+		margin-top: 5px;
+		.icon{
+			height: 30px;
+			margin: auto 30px;
+		}
+		.divider{
+			margin-top: 5px;
+			height: 30px;
+			width: 3px;
+			background-color: $darkblue;
+		}
+	}
 }
-.red{
-	color: red;
-}
-footer{
-	background-color: white;
-	margin-top: 5px;
-}
-.divider{
-	margin-top: 5px;
-	height: 30px;
-	width: 3px;
-	background-color: darkblue;
-}
+
 .inline{
 	display: inline-block;
 }
-.icon{
-	height: 30px;
-	margin: auto 30px;
-}
-.text-container{
-	padding: 100px 0;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-}
-.title{
-	padding-bottom: 10px;
-	font-family: ninobold;
-	font-size: 30px;
-}
-.phone:hover {
-	color: white;
-	font-size: inherit;
-}
-.map{
-	width: 600px;
-	overflow: hidden
-}
-.contact-ul{
-	color: red;
-}
-.img {
-	width: 100px;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 10px;
-}
+
 .margin{
 	padding: 10px;
 	background-color: silver;
 }
-.scroll{
-	height: 100px;
-	overflow: auto;
-	scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-	background-color: white;
-}
-::-webkit-scrollbar-thumb{
-	background-color: white;
-	border-radius: 50px;
-	background-color: darkblue;
-}
-.relative{
-	position: relative;
-}
-.rim{
-	position: absolute;
-	width: 10%;
-	right: 30px;
-	bottom: 20px;
-	transition: bottom 1s linear;
-}
-.rim:active{
-	bottom: 80%;
-	animation: anim 1s infinite;
-}
-.br{
-	position: absolute;
-	left: 30px;
-	bottom: 20px;
-}
-
-
 
 @each $icons in bmw-logo, hyundai-motor-company, logo, youtube {
 	.#{$icons}{

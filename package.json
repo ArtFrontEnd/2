@@ -24,7 +24,7 @@
     "sass": "^1.75.0"
   },
     "browserslist": [
-      "last 200 version",
+      "last 3 version",
       "> 1%",
       "IE 10"
     ],
